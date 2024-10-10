@@ -1,0 +1,140 @@
+/* General body styles */
+html, body, #root, .App{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left, .right {
+  width: 48%;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.right {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General input styles */
+input[type="text"],
+input[type="number"],
+select,
+textarea { /* Added textarea here */
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fafafa;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus { /* Added textarea focus styles */
+  border-color: #2582c0;
+  outline: none;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Section headers */
+h2 {
+  font-size: 20px;
+  color: #2582c0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Section-specific spacing */
+.basic-info, .informations, .summary, .technical-details, .download-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dimensions input */
+.dimensions-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dimensions-input input {
+  width: 45%;
+}
+
+/* Poids Total input */
+.poids-total-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.poids-total-input input {
+  width: 70%;
+}
+
+/* Textarea Styling */
+textarea {
+  resize: vertical; /* Allow resizing only vertically */
+  min-height: 100px; /* Set a minimum height for the textarea */
+  max-height: 300px; /* Limit the max height */
+  line-height: 1.5; /* Line height for text readability */
+}
+
+/* Right Section Styling */
+.right {
+  font-size: 16px;
+  font-weight: 600;
+  color: #777;
+  white-space: pre-line;
+}
+
+.right p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+}
