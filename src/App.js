@@ -58,8 +58,8 @@ function App() {
               <option value="EPUB">EPUB</option>
               <option value="CBZ">CBZ</option>
               <option value="CBR">CBR</option>
-              <option value="PDF & CBZ">pdf cbr</option>
-              <option value="PDF & CBR">pdf cbz</option>
+              <option value="PDF & CBR">pdf cbr</option>
+              <option value="PDF & CBZ">pdf cbz</option>
               <option value="PDF, CBZ, CBR">pdf cbz cbr</option>
             </select>
           </label>
